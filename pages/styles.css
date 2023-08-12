@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+}
+
+.body-text {
+    font-size: 20px;
+}
+
+/* header section */
+#header {
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+    margin: 0;
+}
+
+.header-text{
+    /* font-family: 'Sacramento', cursive; */
+    /* font-family: 'Festive', cursive; */
+    font-family: 'Qwigley', cursive;
+    font-weight: 500;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.venue {
+    color: black;
+}
+
+.names {
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.ribbons{
+    background-color: white;
+    padding: 5% 2%;
+    color: black;
+    border-radius: 1%;
+}
+
+/* story section */
+#story {
+    padding: 2rem 25%;
+    background-color: white;
+}
+
+.story-gallery-section img {
+    width: 25%;
+    /* padding: 5px; */
+    margin: 0;
+}    
+
+.our-story {
+    padding-top: 2rem;
+}
+
+
+.video {
+    /* padding: 2rem 25%; */
+    height: 500px;
+    width: 500px;
+    border-radius: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+
+
+.moreText {
+    display: none;
+}
+
+.show-more .moreText {
+    display: block;
+}
+
+/* .text {
+    font-size: 24px;
+}
+.moreText {
+    display: none;
+}
+.read-more-btn {
+    cursor: pointer;
+}
+
+.text.show-more .moreText {
+    display: inline;
+}
+.text.show-more .dots {
+    display: none;
+} */
+
+/* rsvp section */
+
+#rsvp {
+    background-color: black;
+    color: white;
+    padding: 2rem 10%;
+    font-weight: 100;
+    font-family: 'Courgette', cursive;
+    border-radius: 12%
+
+}
+
+
+
+
+form label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  li {
+    color: white;
+    font-weight: 300;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"] 
+  
+  #fs-name, #ls-name, #email #guests #message {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 48%;
+    text-align: center;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: silver;
+  }
+
+.contact {
+    padding-right: 1%;
+    color: white;
+}  
+
+/* gallery section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 2rem);
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+ .gallery img{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    border-radius: 10%;
+} 
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .9);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.gallery-section{
+    margin: 0;
+}
+
+
+
+/* footer section */
+#footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }    
+
+
+            /* header section */
+        #header {
+            align-items: center;
+            display: block;
+        }
+
+        .header-photo {
+            width: 80%;
+            height: 80%;
+        }
+
+        .ribbons {
+            display: block;
+            padding: 10%;
+        }
+
+        /* story section */
+        #story {
+            padding: 2rem 15%;
+        }
+
+        .our-story{
+        
+           margin-top: 5rem;
+        }
+
+       
+
+        /* rsvp section */
+        #rsvp {
+        border-radius: 2%
+        }
+
+        /* gallery section */
+        .gallery-section {
+            justify-content: center;
+            align-content: center;
+            width: 80%;
+            padding-right: 5rem;
+        }
+
+        .gallery {
+            display: grid; 
+            grid-template-columns: repeat(4, 2rem);
+            grid-gap: 5px;
+            
+        }
+
+        #lightbox {
+            overflow-x: hidden;
+        }
+
+        #lightbox img {
+            max-width: 60%;
+            max-height: 90%;
+            padding: 4px;
+            background-color: black;
+            border: 2px solid white;
+            justify-content: center;
+            align-content: center;
+        }
+
+        /* footer section */
+        #footer {
+
+        }
+
+
+}
